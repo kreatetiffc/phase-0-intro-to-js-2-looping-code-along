@@ -4,7 +4,6 @@ const birthday = ["Charli", "Samip", "Ali"]
 function writeCards(birthday) {
     for (let n = 0; n < birthday.length; n++) {
         console.log(`Thank you, ${birthday[n]}, for the wonderful birthday gift!`)
-        debugger
     }
 
     return birthday
