@@ -1,17 +1,17 @@
-// Code your solutions in this file
-const birthday = ["Charli", "Samip", "Ali"]
+const names = ["Guadalupe", "Ollie", "Aki"]
+const messages = []
 
-function writeCards(birthday) {
-    for (let n = 0; n < birthday.length; n++) {
-        console.log(`Thank you, ${birthday[n]}, for the wonderful birthday gift!`)
+function writeCards(names, eventNames) {
+    for (let i = 0; i < names.length; i++) {
+        let message = `Thank you, ${names[i]}, for the wonderful ${eventNames} gift!`
+        messages.push(message)
     }
-
-    return birthday
+    return messages
 }
 
-writeCards(birthday)
-
-let countDown = 10
-while (countDown > -1) {
-    console.log(countDown--)
+function countDown(number) {
+    while (number >= 0) {
+        console.log(number);
+        number--
+    }
 }
